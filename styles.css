@@ -1,0 +1,60 @@
+* body .types .inspire, * body .types .gloves, * body .types .mix, * body .types .colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #0D79B0;
+  color: white;
+}
+
+* body .top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: #2DAFD5;
+}
+* body .top {
+  width: 960px;
+  height: 287px;
+  background-image: url(splash.jpg);
+}
+* body .top .title {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 50%;
+  color: white;
+}
+* body .top h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+* body .types {
+  width: 960px;
+  height: 300PX;
+  display: flex;
+  gap: 1.5px;
+}
+* body .form {
+  display: flex;
+  width: 965px;
+  height: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0D79B0;
+}
+
+/*# sourceMappingURL=styles.css.map */

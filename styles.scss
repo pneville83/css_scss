@@ -1,0 +1,85 @@
+$background-page: #2DAFD5;
+$background-box: #0D79B0;
+$text-color: white;
+
+%flex-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: $background-box;
+    color: $text-color;
+}
+
+%background-img-setup {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+      body {
+        margin-left: 15%;
+        margin-top: 5%;
+        background-color: $background-page;
+
+          .top {
+            width: 960px;
+            height: 287px;
+            background-image: url(splash.jpg);
+            @extend %background-img-setup;
+
+              .title {
+                width: 30%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                margin-left: 50%;
+                color: white;
+              }
+
+              h2 {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              }
+      
+          }
+          .types {
+            width: 960px;
+            height: 300PX;
+            display: flex;
+            gap: 1.5px;
+            
+            .colors {
+                @extend %flex-instructions;
+            }
+
+            .mix {
+                @extend %flex-instructions;
+            }
+            
+            .gloves {
+                @extend %flex-instructions;
+            }
+
+            .inspire {
+                @extend %flex-instructions;
+            }
+          } 
+
+      .form {
+        display: flex;
+        width: 965px;
+        height: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $background-box;
+      }   
+      }
+}
